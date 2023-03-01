@@ -1,42 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background: #dcdcdc;
-  font-family: 'Roboto', sans-serif;
+body{
   height: 100vh;
-
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 main{
   display: flex;
   justify-content: center;
 }
-
-.text-center {
-  text-align: center; }
-
-.text-right {
-  text-align: right; }
-
-.text-muted {
-  color: #777; }
-
-.cursor-pointer {
-  cursor: pointer; }
-
-.disable-selection {
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer */
-  -khtml-user-select: none;
-  /* KHTML browsers (e.g. Konqueror) */
-  -webkit-user-select: none;
-  /* Chrome, Safari, and Opera */
-  -webkit-touch-callout: none;
-  /* Disable Android and iOS callouts*/ }
 
 .calendar, .calendar .add-event-day .add-event-day-field-btn, .calendar .calendar-days li:after {
 
@@ -50,7 +21,7 @@ main{
   justify-content: center;
   flex-direction: row;
   padding: 30px;
-  margin: 0 auto;
+  margin: 20px auto;
   overflow: hidden;
 
 }
@@ -226,13 +197,4 @@ main{
   line-height: 30px;
   margin: 0 3px;
 
-}
-@media(max-width: 500px){
-  .calendar{
-    flex-direction: column-reverse;
-    transform: scale(0.9, 0.9);
-  }
-  .calendar .calendar-month li{
-    font-size: 10px;
-  }
 }

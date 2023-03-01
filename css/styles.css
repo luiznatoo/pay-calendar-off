@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+header{
+  border: 2px solid red;
+  padding: 150px 0;
+  background: url('https://cutewallpaper.org/25/animated-forest-wallpaper-gif/snowy-forest-wallpaper-gif-gfycat.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.90;
+ 
+
+}
+.container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 30px 30px;
+  border: 2px solid blue;
+  width: 80%;
+  overflow: hidden;
+}
+
+#frase {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Gloock', serif;
+  margin-bottom: 20px;
+}
+header a{
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #252525;
+  text-transform: uppercase;
+  width: 240px;
+  margin: 0 auto;
+  padding: 10px 0 ;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  border: 3px solid #252525;
+}
+header a:hover{
+  border: 3px solid #fff;
+  color: #fff;
+  transition: 500ms;
+  transform: scale(1.1, 1.1);
+}
+section{
+    width: 100%;
+    padding: 40px 4%;
+    font-family: sans-serif;
+    color: #fff;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section:nth-of-type(2){
+    background-image: url('https://thumbs.gfycat.com/CalmFaithfulAsiantrumpetfish-size_restricted.gif');
+    height: 400px;
+}
+section:nth-of-type(4){
+    background-image: url('https://j.gifs.com/K1Nvon.gif');
+    height: 400px;
+}
+section:nth-of-type(6){
+    background-image: url('https://i.pinimg.com/originals/cc/51/a3/cc51a378a4accec027b87361dab54217.gif');
+    height: 400px;
+}
+section:nth-of-type(7){
+
+}
+.container-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px 0;
+
+}
+.marge{
+    flex-direction: row-reverse;
+    border: 2px solid red;
+}
+.section-img{
+    max-width: 460px
+
+
+}
+.section-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: -10px 10px 0px #fff;
+    border: 5px solid #fff;
+
+}
+.section-conteudo{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 460px;
+
+}
+.section-conteudo h2{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.section-conteudo p{
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 100;
+
+
+
+}
+.section-conteudo a{
+    display: block;
+    width: 180px;
+    padding: 10px 0;
+    border: 3px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+.section-conteudo a, .section-conteudo p, .section-conteudo h2{
+    margin-bottom: 30px;
+}
