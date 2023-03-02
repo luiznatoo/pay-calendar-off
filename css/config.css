@@ -10,6 +10,21 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+  @font-face {
+    font-family: 'Nexa-thin';
+    src: url('/font/Nexa-ExtraLight.ttf') format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Nexa';
+    src:  url('/font/Nexa-Heavy.ttf') format('truetype');
+}
+h2{
+  font-family: "Nexa";
+}
+p{
+  font-family: "Nexa-thin";
+}
   
 .text-center {
     text-align: center; }

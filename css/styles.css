@@ -32,7 +32,6 @@ header{
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   animation-delay: 1;
-  
 }
 @keyframes image{
     0%{
@@ -40,6 +39,7 @@ header{
         background-size: cover;
         background-repeat: no-repeat;
         transition: 100ms;
+        
     }
     50%{
         background: url('/img/trás-senat.png') center center;
@@ -93,14 +93,20 @@ section{
 section:nth-of-type(2){
     background-image: url('/img/campo-senat.png');
     height: 50vh;
+    filter: blur(2px);
+    object-fit: cover;
 }
 section:nth-of-type(4){
     background-image: url('/img/trás-senat.png');
     height: 50vh;
+    filter: blur(2px);
+    object-fit: cover;
 }
 section:nth-of-type(6){
     background-image: url('/img/sala-senat.png');
     height: 50vh;
+    filter: blur(2px);
+    object-fit: cover;
 }
 section:nth-of-type(7){
 
@@ -125,7 +131,7 @@ section:nth-of-type(7){
     height: auto;
     border-radius: 15px;
     box-shadow: 0 0 50px #25252588;
-
+    object-fit: cover;
 }
 .section-conteudo{
     display: flex;
