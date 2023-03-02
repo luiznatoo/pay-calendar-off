@@ -77,4 +77,27 @@
         section{
           background-attachment: inherit;
         }
+        header{
+
+        }
+        section:nth-of-type(2){
+          background: url("/img/1-responsive.png") center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+        section:nth-of-type(4){
+          background: url("/img/2-responsive.png") center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+
+        }
+        section:nth-of-type(6){
+          background: url("/img/3-responsive.png") center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+
+        }
       }  

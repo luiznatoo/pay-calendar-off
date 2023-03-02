@@ -1,13 +1,18 @@
 @font-face {
-    font-family: "Nexa", sans-serif;
-    src: url(/font/Nexa-ExtraLight.ttf) format("truetype"),  url(/font/Nexa-Heavy.ttf) format('truetype'), url(/font/Nexa\ Bold.otf) format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
+    font-family: 'Nexa-thin';
+    src: url('/font/Nexa-ExtraLight.ttf') format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Nexa';
+    src:  url('/font/Nexa-Heavy.ttf') format('truetype');
+}
 :root{
     --cor-principal: #252525;
     --cor-secundária: #FFF5E4;
     --cor-de-impacto: #F05454;
+    --font--principal: "Nexa";
+    --font--secundaria: "Nexa-thin"
 }
 header{
   height: 100vh;
@@ -22,15 +27,16 @@ header{
   display: grid;
   align-items: center;
   animation-name: image;
-  animation-duration: 5s;
-  animation-timing-function: 2;
+  animation-duration: 6s;
+  animation-timing-function: 1;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
+  animation-delay: 1;
   
 }
 @keyframes image{
     0%{
-        background-image: url('/img/campo-senat.png') center center;
+        background: url('/img/campo-senat.png') center center;
         background-size: cover;
         background-repeat: no-repeat;
         transition: 100ms;
@@ -57,13 +63,14 @@ header{
 }
 #frase {
   font-size: 4em;
-  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
   color: var(--cor-secundária);
-  font-family: 'Gloock', serif;
   margin-bottom: 20px;
-  font-family: "Nexa";
+  font-family: var(--font--principal);
+}
+.area1, .area2 .area3, .area4, .area5{
+    visibility: hidden;
 }
 #frase::after{
     content: '';
@@ -128,19 +135,17 @@ section:nth-of-type(7){
 .section-conteudo h2{
     font-size: 2.5em;
     text-transform: uppercase;
-    font-weight: 900;
     color: #252525;
     font-family: sans-serif;
-    font-family: "Nexa", sans-serif;
+    font-family: var(--font--principal);
 }
 .section-conteudo p{
     font-size: 1.125em;
     line-height: 1.5em;
-    font-weight: 100;
     color: #252525;
     font-family: sans-serif;
     font-weight: 300;
-    font-family: "Nexa", sans-serif;
+    font-family: var(--font--secundaria);
 }
 .section-conteudo a{
     display: block;
@@ -153,12 +158,12 @@ section:nth-of-type(7){
     text-decoration: none;
     color: var(--cor-principal);
     font-size: 1.125em;
-    font-weight: bold;
+    font-family: var(--font--principal);
 }
 .section-conteudo a:hover{
     border: 3px solid var(--cor-de-impacto);
     color: var(--cor-de-impacto);
-    transition: 500ms;
+    transition: 1000ms;
     transform: scale(1.1, 1.1);
 }
 .section-conteudo a, .section-conteudo p, .section-conteudo h2{
