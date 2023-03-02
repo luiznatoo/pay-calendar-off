@@ -1,75 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
-
+@font-face {
+    font-family: "Nexa", sans-serif;
+    src: url(/font/Nexa-ExtraLight.ttf) format("truetype"),  url(/font/Nexa-Heavy.ttf) format('truetype'), url(/font/Nexa\ Bold.otf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+:root{
+    --cor-principal: #252525;
+    --cor-secundária: #FFF5E4;
+    --cor-de-impacto: #F05454;
+}
 header{
-  border: 2px solid red;
-  padding: 150px 0;
-  background: url('https://cutewallpaper.org/25/animated-forest-wallpaper-gif/snowy-forest-wallpaper-gif-gfycat.gif');
+  height: 100vh;
+  background: url('/img/sala-senat.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.90;
- 
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: grid;
+  align-items: center;
+  animation-name: image;
+  animation-duration: 5s;
+  animation-timing-function: 2;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  
 }
+@keyframes image{
+    0%{
+        background-image: url('/img/campo-senat.png') center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 100ms;
+    }
+    50%{
+        background: url('/img/trás-senat.png') center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 100ms;
+    }
+    100%{
+        background: url("/img/sala-senat.png") center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 100ms;
+    }
+}
+
 .container {
-  text-align: center;
-  margin: 50px auto;
+  margin: 0px auto;
   padding: 30px 30px;
-  border: 2px solid blue;
   width: 80%;
   overflow: hidden;
 }
-
 #frase {
   font-size: 4em;
   font-weight: 900;
+  text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--cor-secundária);
   font-family: 'Gloock', serif;
   margin-bottom: 20px;
+  font-family: "Nexa";
 }
-header a{
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #252525;
-  text-transform: uppercase;
-  width: 240px;
-  margin: 0 auto;
-  padding: 10px 0 ;
-  font-weight: bold;
-  cursor: pointer;
-  display: block;
-  border: 3px solid #252525;
-}
-header a:hover{
-  border: 3px solid #fff;
-  color: #fff;
-  transition: 500ms;
-  transform: scale(1.1, 1.1);
+#frase::after{
+    content: '';
+    margin: 10px auto;
+    background-color: var(--cor-secundária);
+    height: 4px;
+    width: 80px;
+    text-align: center;
+    display: block;
+    text-align: center;
 }
 section{
     width: 100%;
     padding: 40px 4%;
-    font-family: sans-serif;
-    color: #fff;
-
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 section:nth-of-type(2){
-    background-image: url('https://thumbs.gfycat.com/CalmFaithfulAsiantrumpetfish-size_restricted.gif');
-    height: 400px;
+    background-image: url('/img/campo-senat.png');
+    height: 50vh;
 }
 section:nth-of-type(4){
-    background-image: url('https://j.gifs.com/K1Nvon.gif');
-    height: 400px;
+    background-image: url('/img/trás-senat.png');
+    height: 50vh;
 }
 section:nth-of-type(6){
-    background-image: url('https://i.pinimg.com/originals/cc/51/a3/cc51a378a4accec027b87361dab54217.gif');
-    height: 400px;
+    background-image: url('/img/sala-senat.png');
+    height: 50vh;
 }
 section:nth-of-type(7){
 
@@ -85,52 +109,57 @@ section:nth-of-type(7){
 }
 .marge{
     flex-direction: row-reverse;
-    border: 2px solid red;
 }
 .section-img{
     max-width: 460px
-
-
 }
 .section-img img{
     width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: -10px 10px 0px #fff;
-    border: 5px solid #fff;
+    box-shadow: 0 0 50px #25252588;
 
 }
 .section-conteudo{
     display: flex;
     flex-direction: column;
-
     max-width: 460px;
-
 }
 .section-conteudo h2{
-    font-size: 2em;
+    font-size: 2.5em;
     text-transform: uppercase;
+    font-weight: 900;
+    color: #252525;
+    font-family: sans-serif;
+    font-family: "Nexa", sans-serif;
 }
 .section-conteudo p{
-    font-size: 1em;
+    font-size: 1.125em;
     line-height: 1.5em;
     font-weight: 100;
-
-
-
+    color: #252525;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-family: "Nexa", sans-serif;
 }
 .section-conteudo a{
     display: block;
     width: 180px;
     padding: 10px 0;
-    border: 3px solid #fff;
+    border: 3px solid var(--cor-principal);
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
-    color: #fff;
+    color: var(--cor-principal);
     font-size: 1.125em;
     font-weight: bold;
+}
+.section-conteudo a:hover{
+    border: 3px solid var(--cor-de-impacto);
+    color: var(--cor-de-impacto);
+    transition: 500ms;
+    transform: scale(1.1, 1.1);
 }
 .section-conteudo a, .section-conteudo p, .section-conteudo h2{
     margin-bottom: 30px;

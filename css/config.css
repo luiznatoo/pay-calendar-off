@@ -4,10 +4,11 @@
     box-sizing: border-box; }
   
   body {
-    background: #252525;
+    background: #fff;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-  
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
 .text-center {
@@ -35,7 +36,6 @@
     /* Disable Android and iOS callouts*/ }
     footer{
         margin: 0 auto;
-        border: 2px solid red;
         width: 100%;
         background-color: #fff;
         padding: 10px;
@@ -47,7 +47,6 @@
       }
       footer p{
         text-align: center;
-        border: 2px solid blue;
         color: #252525;
       }
       footer p a{
@@ -64,12 +63,18 @@
           font-size: 10px;
         }
         #frase{
-            font-size: 3em;
+            font-size: 2em; 
         }
         .container-section{
           flex-direction: column;
         }
         .section-conteudo{
           margin: 20px 0 0 0 ;
+        }
+        header{
+          background-attachment: inherit;
+        }
+        section{
+          background-attachment: inherit;
         }
       }  
