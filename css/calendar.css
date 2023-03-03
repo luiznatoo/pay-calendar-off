@@ -41,6 +41,8 @@ main{
 }
 
 .calendar .left-side {
+  font-family: "Nexa-thin";
+  
 
 }
 
@@ -56,6 +58,7 @@ main{
 .calendar .current-day-events ul {
   padding-left: 30px;
   list-style: none;
+
   
 }
 
@@ -67,6 +70,7 @@ main{
 
 .calendar h1.calendar-left-side-day {
   font-size: 5em;
+  font-family: "Nexa";
 }
 
 .calendar .add-event-day {
@@ -141,6 +145,7 @@ main{
 .calendar .calendar-days{
   display: grid;
   grid-template-columns: repeat(7, auto);
+  font-family: "Nexa-thin";
 
 }
 .calendar .calendar-days li {
@@ -198,4 +203,8 @@ main{
   line-height: 30px;
   margin: 0 3px;
 
+}
+details{
+  margin: 0 auto;
+  max-width: 460px;
 }
