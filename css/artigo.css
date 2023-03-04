@@ -7,23 +7,24 @@ hr{
   max-width: 700px;
 }
 header{
- margin: 0 auto;
- background-color: var(--cor-secundária);
-}
-.header-nav{
-  width: 80%;
-  height: 60px;
   margin: 0 auto;
-  display: grid;
-  justify-items: left;
-  align-items: center;
-}
-.header-img img{
-  max-width: 40px;
-  height: auto; 
-  border-radius: 50%;
-  padding: 7px;
-}
+  background-color: var(--cor-secundária);
+ }
+ .header-nav{
+   width: 80%;
+   height: 60px;
+   margin: 0 auto;
+   display: grid;
+   justify-items: left;
+   align-items: center;
+ }
+ .header-img img{
+   max-width: 40px;
+   height: auto; 
+   border-radius: 50%;
+   padding: 7px;
+ }
+   
 .conteudo{
   width: 100%;
   display: grid;

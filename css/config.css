@@ -1,3 +1,10 @@
+:root{
+  --cor-principal: #252525;
+  --cor-secundária: #FFF5E4;
+  --cor-de-impacto: #F05454;
+  --font--principal: "Nexa";
+  --font--secundaria: "Nexa-thin"
+}
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +32,7 @@ h2{
 p{
   font-family: "Nexa-thin";
 }
-  
+
 .text-center {
     text-align: center; }
   
@@ -67,6 +74,9 @@ p{
       footer p a{
         color: #737373;
         text-decoration: none;
+      }
+      footer p a:hover{
+        color: var(--cor-de-impacto);
       }
       
     @media(max-width: 500px){
@@ -115,4 +125,16 @@ p{
           background-attachment: fixed;
 
         }
-      }  
+      } 
+      @media(max-width: 350px){
+        section:nth-of-type(2){
+          background-attachment: inherit;
+
+        }
+        section:nth-of-type(4){
+          background-attachment: inherit;
+        }
+        section:nth-of-type(6){
+          background-attachment: inherit;
+        }
+      }

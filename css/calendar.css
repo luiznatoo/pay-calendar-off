@@ -1,3 +1,10 @@
+:root{
+  --cor-principal: #252525;
+  --cor-secundária: #FFF5E4;
+  --cor-de-impacto: #F05454;
+  --font--principal: "Nexa";
+  --font--secundaria: "Nexa-thin"
+}
 body{
   height: 100vh;
   display: grid;
