@@ -1,6 +1,6 @@
 const frases = [
   '"Silêncio e o refúgio das mentes produtivas."',
-  "Se seu dia está curto, acorde mais cedo. Se está rápido, desacelere. Se menos produtivo, gerencie sua energia",
+  "Se seu dia está curto, acorde mais cedo. Se está rápido, desacelere. Se está menos produtivo, gerencie sua energia",
   "A produtividade do trabalho não é responsabilidade do trabalhador mas do gestor.",
   "Nada acontece por acaso, por isso, lutem prol dos seus sonhos: produtividade é fruto de trabalho árduo.",
   '"A questão essencial não é "o quanto acusado você está", mas sim "com o que você está ocupado".',
@@ -18,7 +18,6 @@ const frases = [
   "Se você ainda não fracassou na sua carreira, sinal que ainda não arriscou o suficiente.",
   "Foque em seus resultados, pois eles serão o indicador do seu sucesso.",
   "Jamais comece um dia sem antes de tê-lo terminado no papel.",
-  "Pata q você saia do desejo e vá para a ação, você precisa sair da zona de conforto",
   "Ocupe sua mente com pensamentos positivos e produtivos e seus passos trilharam em busca de novas realizações",
   "o trabalho se expande de modo a preencher o tempo disponível para a sua realização. Quanto mais tempo, mais importante e exigente o trabalho parece. ",
   '"Os que são loucos o suficiente para pensar que podem mudar o mundo, são os que realmente o fazem." Steve Jobs.',
@@ -31,6 +30,10 @@ const frases = [
   '"Se eu tivesse apenas uma hora para cortar uma árvore, eu usaria os primeiros quarenta e cinco minutos afiando meu machado." - Abraham Lincoln'
   
 ];
+// SCRIPT PARA APRESENTAR FRASES DIÁRIAS 
+//const hoje = new Date().getDate();
+//document.getElementById("frase").textContent = frases[hoje % frases.length];
 
-const hoje = new Date().getDate();
-document.getElementById("frase").textContent = frases[hoje % frases.length];
+// SCRIPT PARA APRESENTAR FRASES ALEATÓRIAS TODA VEZ QUE CARREGA A PÁGINA
+const numero = Math.floor(Math.random() * 28);
+document.getElementById("frase").textContent = frases[numero]
