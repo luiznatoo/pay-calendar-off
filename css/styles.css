@@ -15,7 +15,7 @@
     --font--secundaria: "Nexa-thin"
 }
 header{
-  height: 100vh;
+  height: 600px;
   background: url('/img/sala-senat.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,11 +58,11 @@ header{
 .container {
   margin: 0px auto;
   padding: 30px 30px;
-  width: 80%;
+  max-width: 960px;
   overflow: hidden;
 }
 #frase {
-  font-size: 4em;
+  font-size: 2.5em;
   text-align: center;
   text-transform: uppercase;
   color: var(--cor-secundária);
@@ -92,19 +92,19 @@ section{
 }
 section:nth-of-type(2){
     background-image: url('/img/campo-senat.png');
-    height: 50vh;
+    height: 400px;
     filter: blur(2px);
     object-fit: cover;
 }
 section:nth-of-type(4){
     background-image: url('/img/trás-senat.png');
-    height: 50vh;
+    height: 400px;
     filter: blur(2px);
     object-fit: cover;
 }
 section:nth-of-type(6){
     background-image: url('/img/sala-senat.png');
-    height: 50vh;
+    height: 400px;
     filter: blur(2px);
     object-fit: cover;
 }
@@ -116,7 +116,7 @@ section:nth-of-type(7){
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 auto;
-    width: 80%;
+    max-width: 960px;
     padding: 30px 0;
 
 }
@@ -167,10 +167,9 @@ section:nth-of-type(7){
     font-family: var(--font--principal);
 }
 .section-conteudo a:hover{
-    border: 3px solid var(--cor-de-impacto);
-    color: var(--cor-de-impacto);
-    transition: 1000ms;
-    transform: scale(1.1, 1.1);
+    background-color: var(--cor-principal);
+    color: var(--cor-secundária);
+    transition: 500ms;
 }
 .section-conteudo a, .section-conteudo p, .section-conteudo h2{
     margin-bottom: 30px;
