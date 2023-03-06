@@ -9,7 +9,7 @@ const frases = [
   "As pessoas que discordam são as mais construtivas da equepe, mas não são as mais produtivas. ",
   "Em tudo que for fazer na vida, dedique-se por inteiro. Envolva-se e seja envolvido. Emprenhe-se em dar sempre o seu melhor, nunca menos do que isso.",
   "A única coisa que separa você do seu sucesso, são as desculpas que você dá para não fazer as coisas.",
-  "Quem não sabe trabalhar em equipe e se relacionar com a hierarquia, não sabe viver em uma democracia. ",
+  "Quem não sabe trabalhar em equipe e se relacionar com a hierarquia, não sabe viver em uma democracia.",
   "Não espere ter pessoas pra fazer alguma coisa, o mundo é movido por pessoas ocupadas. Os desocupados não participam das grandes mudanças do mundo.",
   "Se for importante pra você, vai encontrar uma maneira. Se não, vai encontrar uma desculpa.",
   "As coisas fáceis, simples e grátis, também tem seu preço",
