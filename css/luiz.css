@@ -1,0 +1,88 @@
+body{
+  background-color: #252525;
+  width: 100%;
+  min-height: calc(100vh + 10px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+body .blur{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+  filter: blur(10px);
+  mix-blend-mode: lighten;
+  
+}
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  
+}
+.container-react{
+  max-width: 250px;
+  height: auto;
+
+}
+.container-react img{
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  mix-blend-mode: lighten;
+  object-fit: cover;
+  animation-name: react;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+@keyframes react{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+main a{
+  width: 240px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 13px 0;
+  text-align: center;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  
+}
+a:hover{
+  outline: none;
+  transform: scale(1.05);  
+
+}
+footer{
+  background: transparent;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+footer p{
+  color: #fff;
+}
