@@ -86,6 +86,10 @@ header{
   margin: 10px 0;
   font-size: 2em;
 }
+.container-word > article h3{
+  margin: 10px 0;
+  font-size: 1.125em;
+}
 .container-word > article p{
   font-size: 1.125em;
 }
