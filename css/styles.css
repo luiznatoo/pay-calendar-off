@@ -97,7 +97,7 @@ section:nth-of-type(2){
     filter:  blur(1.5px);
     object-fit: cover;
 
-}
+} 
 section:nth-of-type(4){
     background-image: url('/img/trás-senat.png');
     height: 400px;
@@ -105,6 +105,7 @@ section:nth-of-type(4){
     object-fit: cover;
 
 }
+/*
 section:nth-of-type(6){
     background-image: url('/img/sala-senat.png');
     height: 400px;
@@ -115,6 +116,7 @@ section:nth-of-type(6){
 section:nth-of-type(7){
 
 }
+*/
 .container-section{
     display: flex;
     flex-direction: row;
