@@ -94,14 +94,14 @@ section{
 section:nth-of-type(2){
     background-image: url('/img/campo-senat.png');
     height: 400px;
-    filter:  blur(1.5px);
+    filter:  blur(0.5px);
     object-fit: cover;
 
 } 
 section:nth-of-type(4){
     background-image: url('/img/trás-senat.png');
     height: 400px;
-    filter:  blur(1.5px);
+    filter:  blur(0.5px);
     object-fit: cover;
 
 }
@@ -109,7 +109,7 @@ section:nth-of-type(4){
 section:nth-of-type(6){
     background-image: url('/img/sala-senat.png');
     height: 400px;
-    filter:  blur(1.5px);
+    filter:  blur(0.5px);
     object-fit: cover;
 
 }
