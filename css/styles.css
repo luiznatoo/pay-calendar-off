@@ -17,6 +17,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+}
 header{
   height: 600px;
   background: url('/img/sala-senat.png');
@@ -235,6 +238,7 @@ section:nth-of-type(7){
     color: var(--cor-secundária);
     margin-right: -4px;
     transition: 300ms;
+    border-radius: 0;
 }
 .newsletter-form input:hover{
     border: 3px solid var(--cor-de-impacto);
