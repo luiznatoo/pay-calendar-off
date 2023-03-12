@@ -70,13 +70,18 @@ p{
       footer p{
         text-align: center;
         color: #252525;
+        font-weight: bold;
+        font-size: 1.125em;
       }
       footer p a{
         color: #737373;
         text-decoration: none;
+        transition: 300ms;
+
       }
       footer p a:hover{
         color: var(--cor-de-impacto);
+      
       }
       
     @media(max-width: 500px){

@@ -14,6 +14,9 @@
     --font--principal: "Nexa";
     --font--secundaria: "Nexa-thin"
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
   height: 600px;
   background: url('/img/sala-senat.png');
@@ -32,6 +35,7 @@ header{
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   animation-delay: 1;
+  position: relative;
 }
 @keyframes image{
     0%{
@@ -76,7 +80,7 @@ header{
 #frase::after{
     content: '';
     margin: 10px auto;
-    background-color: var(--cor-secundária);
+    background-color: var(--cor-de-impacto);
     height: 4px;
     width: 80px;
     text-align: center;
@@ -178,4 +182,106 @@ section:nth-of-type(7){
     background-color: var(--cor-principal);
     color: var(--cor-secundária);
     transition: 500ms;
+}
+.newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--cor-principal);
+    padding: 20px;
+    
+}
+.newsletter-container{
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+
+}
+.newsletter-conteudo{
+    max-width: 460px;
+}
+.newsletter-conteudo h2{
+    font-family: var(--font--principal);
+    color: var(--cor-secundária);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    width: 100%;
+}
+.newsletter-conteudo p{
+    font-family: var(--font--secundaria);
+    font-style: italic;
+    font-size: 1.5em;
+    color: var(--cor-secundária);
+    width: 100%;
+
+}
+.newsletter-form{
+    max-width: 460px;
+   
+}
+.newsletter-form input{
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    font-size: 1.125em;
+    font-style: italic;
+    font-family: var(--font--secundaria);
+    outline: none;
+    border: 3px solid var(--cor-secundária);
+    background: transparent;
+    color: var(--cor-secundária);
+    margin-right: -4px;
+    transition: 300ms;
+}
+.newsletter-form input:hover{
+    border: 3px solid var(--cor-de-impacto);
+}
+::-webkit-input-placeholder{
+    color: var(--cor-secundária);
+}
+.newsletter-form button{
+    width: 120px;
+    font-size: 1.125em; 
+    height: auto;
+    padding: 10px;
+    color: var(--cor-principal);
+    background: var(--cor-secundária);
+    border: 3px solid var(--cor-secundária);
+    outline: none;
+    cursor: pointer;
+    font-family: var(--font--principal);
+    text-transform: uppercase;
+    transition: 300ms;
+}
+.newsletter-form button:hover{
+    background: transparent;
+    color: var(--cor-de-impacto);
+    border: 3px solid var(--cor-de-impacto);
+}
+
+header nav{
+    width: 100%;
+    background: var(--cor-principal);
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+header nav ul li{
+    float: right;
+    list-style: none;
+    margin: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--cor-secundária);
+    font-size: 1.125em;
+    font-family: var(--font--secundaria);
+    font-weight: 900;
+}
+header nav ul li a:hover{
+    border-bottom: 3px solid var(--cor-de-impacto);
+    transition-duration: 150ms;
 }
